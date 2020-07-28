@@ -3,6 +3,8 @@ Documentation  This is to automate onemap website
 Resource    ../Resources/PO/Carousel.robot
 Resource    ../Resources/PO/LandingPage.robot
 Resource    ../Resources/PO/Search.robot
+Resource    ../Resources/PO/NearbyService.robot
+
 *** Variables ***
 
 
@@ -23,8 +25,18 @@ Verify all the page elements
     LandingPage.Click MenuWidget
     LandingPage.Verify Menuwidget
 
-Verify Search functionality
+Verify Search functionality with Address
+    Search.Search with Address
+    Search.Verify Search result with Address
+    Search.Verify Search result on map with Address
+
+Verify Search functionality with Pincode
     Search.Search with Pincode
-    Search.Verify Search result
-    Search.Verify Search result on map
+    Search.Verify Search result with pincode
+    Search.Verify Search result on map with pincode
+
+Verify Nearest services
+     nearbyservice.nearest items
+     nearbyservice.nearby mrt
+
 
