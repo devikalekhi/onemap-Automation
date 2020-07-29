@@ -17,14 +17,14 @@ Resource    ../Resources/Common.robot
 #    OnemapApp.Verify all the page elements
 #    Common.End Web Test
 
-Verify search feature.
-    [Documentation]  Test case 2
-    Common.Begin Web test
-    OnemapApp.Navigate to Application
-    OnemapApp.Close the carousel
-    OnemapApp.Verify Search functionality with Address
-    OnemapApp.Verify Search functionality with Pincode
-    Common.End Web Test
+#Verify search feature.
+#    [Documentation]  Test case 2
+#    Common.Begin Web test
+#    OnemapApp.Navigate to Application
+#    OnemapApp.Close the carousel
+#    OnemapApp.Verify Search functionality with Address
+#    OnemapApp.Verify Search functionality with Pincode
+#    Common.End Web Test
 
 #Verify Nearby services
 #    [Documentation]  Test case 3
@@ -35,3 +35,11 @@ Verify search feature.
 #    OnemapApp.Verify Nearest services
 #    Common.End Web Test
 
+Verify user able to search the route from source to destination
+    [Documentation]  Test case 3
+    Common.Begin Web test
+    OnemapApp.Navigate to Application
+    OnemapApp.Close the carousel
+    OnemapApp.Verify Search functionality with Address
+    OnemapApp.Verify Route
+    Common.End Web Test

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200729 00:29:18.229" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200730 00:01:12.964" rpa="false">
 <suite id="s1" name="Onemap" source="C:\development\robot-scripts\onemap\tests\Onemap.robot">
-<test id="s1-t1" name="Verify search feature.">
+<test id="s1-t1" name="Verify user able to search the route from source to destination">
 <kw name="Begin Web test" library="Common">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -9,14 +9,14 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20200729 00:29:18.552" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200729 00:29:18.551" endtime="20200729 00:29:32.107"></status>
+<msg timestamp="20200730 00:01:13.376" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200730 00:01:13.376" endtime="20200730 00:01:17.443"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200729 00:29:32.108" endtime="20200729 00:29:34.267"></status>
+<status status="PASS" starttime="20200730 00:01:17.444" endtime="20200730 00:01:19.602"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:18.551" endtime="20200729 00:29:34.267"></status>
+<status status="PASS" starttime="20200730 00:01:13.375" endtime="20200730 00:01:19.602"></status>
 </kw>
 <kw name="Navigate to Application" library="OnemapApp">
 <kw name="Load" library="Carousel">
@@ -25,18 +25,18 @@
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20200729 00:29:34.267" level="INFO">Opening url 'https://www.onemap.sg/main/v2/'</msg>
-<status status="PASS" starttime="20200729 00:29:34.267" endtime="20200729 00:29:41.457"></status>
+<msg timestamp="20200730 00:01:19.602" level="INFO">Opening url 'https://www.onemap.sg/main/v2/'</msg>
+<status status="PASS" starttime="20200730 00:01:19.602" endtime="20200730 00:01:26.054"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20200729 00:29:44.459" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200729 00:29:41.457" endtime="20200729 00:29:44.459"></status>
+<msg timestamp="20200730 00:01:29.056" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 00:01:26.054" endtime="20200730 00:01:29.057"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:34.267" endtime="20200729 00:29:44.459"></status>
+<status status="PASS" starttime="20200730 00:01:19.602" endtime="20200730 00:01:29.059"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Carousel">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -44,19 +44,19 @@
 <arguments>
 <arg>OneMap</arg>
 </arguments>
-<status status="PASS" starttime="20200729 00:29:44.460" endtime="20200729 00:29:44.512"></status>
+<status status="PASS" starttime="20200730 00:01:29.066" endtime="20200730 00:01:29.128"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>OneMap</arg>
 </arguments>
-<msg timestamp="20200729 00:29:44.525" level="INFO">Page title is 'OneMap'.</msg>
-<status status="PASS" starttime="20200729 00:29:44.512" endtime="20200729 00:29:44.526"></status>
+<msg timestamp="20200730 00:01:29.135" level="INFO">Page title is 'OneMap'.</msg>
+<status status="PASS" starttime="20200730 00:01:29.128" endtime="20200730 00:01:29.135"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:44.459" endtime="20200729 00:29:44.526"></status>
+<status status="PASS" starttime="20200730 00:01:29.061" endtime="20200730 00:01:29.136"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:34.267" endtime="20200729 00:29:44.527"></status>
+<status status="PASS" starttime="20200730 00:01:19.602" endtime="20200730 00:01:29.136"></status>
 </kw>
 <kw name="Close the Carousel" library="OnemapApp">
 <kw name="Close the Carousel" library="Carousel">
@@ -65,28 +65,28 @@
 <arguments>
 <arg>id:my-text</arg>
 </arguments>
-<msg timestamp="20200729 00:29:44.585" level="INFO">Current page contains element 'id:my-text'.</msg>
-<status status="PASS" starttime="20200729 00:29:44.532" endtime="20200729 00:29:44.585"></status>
+<msg timestamp="20200730 00:01:29.152" level="INFO">Current page contains element 'id:my-text'.</msg>
+<status status="PASS" starttime="20200730 00:01:29.138" endtime="20200730 00:01:29.152"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>id:my-text</arg>
 </arguments>
-<msg timestamp="20200729 00:29:44.586" level="INFO">Clicking element 'id:my-text'.</msg>
-<status status="PASS" starttime="20200729 00:29:44.586" endtime="20200729 00:29:44.889"></status>
+<msg timestamp="20200730 00:01:29.153" level="INFO">Clicking element 'id:my-text'.</msg>
+<status status="PASS" starttime="20200730 00:01:29.153" endtime="20200730 00:01:29.242"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20200729 00:29:47.892" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200729 00:29:44.890" endtime="20200729 00:29:47.892"></status>
+<msg timestamp="20200730 00:01:32.242" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 00:01:29.242" endtime="20200730 00:01:32.242"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:44.530" endtime="20200729 00:29:47.892"></status>
+<status status="PASS" starttime="20200730 00:01:29.137" endtime="20200730 00:01:32.242"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:44.529" endtime="20200729 00:29:47.892"></status>
+<status status="PASS" starttime="20200730 00:01:29.136" endtime="20200730 00:01:32.242"></status>
 </kw>
 <kw name="Verify Search functionality with Address" library="OnemapApp">
 <kw name="Search with Address" library="Search">
@@ -96,34 +96,26 @@
 <arg>id:search-text</arg>
 <arg>${Address}</arg>
 </arguments>
-<msg timestamp="20200729 00:29:47.894" level="INFO">Typing text '73 choa chu kang loop' into text field 'id:search-text'.</msg>
-<status status="PASS" starttime="20200729 00:29:47.894" endtime="20200729 00:29:48.506"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>id:search-text</arg>
-</arguments>
-<msg timestamp="20200729 00:29:48.507" level="INFO">Clicking element 'id:search-text'.</msg>
-<status status="PASS" starttime="20200729 00:29:48.507" endtime="20200729 00:29:48.583"></status>
+<msg timestamp="20200730 00:01:32.244" level="INFO">Typing text '73 choa chu kang loop' into text field 'id:search-text'.</msg>
+<status status="PASS" starttime="20200730 00:01:32.243" endtime="20200730 00:01:32.773"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20200729 00:29:51.583" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200729 00:29:48.583" endtime="20200729 00:29:51.583"></status>
+<msg timestamp="20200730 00:01:35.775" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 00:01:32.774" endtime="20200730 00:01:35.775"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>id:searchResult0</arg>
 </arguments>
-<msg timestamp="20200729 00:29:51.583" level="INFO">Clicking element 'id:searchResult0'.</msg>
-<status status="PASS" starttime="20200729 00:29:51.583" endtime="20200729 00:29:52.134"></status>
+<msg timestamp="20200730 00:01:35.776" level="INFO">Clicking element 'id:searchResult0'.</msg>
+<status status="PASS" starttime="20200730 00:01:35.775" endtime="20200730 00:01:36.298"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:47.893" endtime="20200729 00:29:52.134"></status>
+<status status="PASS" starttime="20200730 00:01:32.243" endtime="20200730 00:01:36.298"></status>
 </kw>
 <kw name="Verify Search result with Address" library="Search">
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
@@ -131,8 +123,8 @@
 <arguments>
 <arg>xpath://*[@id="road_name"]</arg>
 </arguments>
-<msg timestamp="20200729 00:29:52.251" level="INFO">Current page contains element 'xpath://*[@id="road_name"]'.</msg>
-<status status="PASS" starttime="20200729 00:29:52.136" endtime="20200729 00:29:52.251"></status>
+<msg timestamp="20200730 00:01:36.381" level="INFO">Current page contains element 'xpath://*[@id="road_name"]'.</msg>
+<status status="PASS" starttime="20200730 00:01:36.299" endtime="20200730 00:01:36.381"></status>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
@@ -142,18 +134,18 @@
 <arg>None</arg>
 <arg>True</arg>
 </arguments>
-<msg timestamp="20200729 00:29:52.282" level="INFO">Element 'xpath://*[@id="road_name"]' contains text '73 choa chu kang loop'.</msg>
-<status status="PASS" starttime="20200729 00:29:52.251" endtime="20200729 00:29:52.282"></status>
+<msg timestamp="20200730 00:01:36.537" level="INFO">Element 'xpath://*[@id="road_name"]' contains text '73 choa chu kang loop'.</msg>
+<status status="PASS" starttime="20200730 00:01:36.381" endtime="20200730 00:01:36.537"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20200729 00:29:57.283" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200729 00:29:52.282" endtime="20200729 00:29:57.283"></status>
+<msg timestamp="20200730 00:01:41.538" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200730 00:01:36.537" endtime="20200730 00:01:41.538"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:52.135" endtime="20200729 00:29:57.283"></status>
+<status status="PASS" starttime="20200730 00:01:36.299" endtime="20200730 00:01:41.538"></status>
 </kw>
 <kw name="Verify Search result on map with Address" library="Search">
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
@@ -161,8 +153,8 @@
 <arguments>
 <arg>id:start_marker</arg>
 </arguments>
-<msg timestamp="20200729 00:29:57.345" level="INFO">Current page contains element 'id:start_marker'.</msg>
-<status status="PASS" starttime="20200729 00:29:57.283" endtime="20200729 00:29:57.345"></status>
+<msg timestamp="20200730 00:01:41.556" level="INFO">Current page contains element 'id:start_marker'.</msg>
+<status status="PASS" starttime="20200730 00:01:41.539" endtime="20200730 00:01:41.556"></status>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
@@ -172,137 +164,104 @@
 <arg>None</arg>
 <arg>True</arg>
 </arguments>
-<msg timestamp="20200729 00:29:57.392" level="INFO">Element 'id:start_marker' contains text '73 choa chu kang loop'.</msg>
-<status status="PASS" starttime="20200729 00:29:57.345" endtime="20200729 00:29:57.392"></status>
+<msg timestamp="20200730 00:01:41.612" level="INFO">Element 'id:start_marker' contains text '73 choa chu kang loop'.</msg>
+<status status="PASS" starttime="20200730 00:01:41.556" endtime="20200730 00:01:41.612"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:57.283" endtime="20200729 00:29:57.392"></status>
+<status status="PASS" starttime="20200730 00:01:41.538" endtime="20200730 00:01:41.613"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:47.892" endtime="20200729 00:29:57.392"></status>
+<status status="PASS" starttime="20200730 00:01:32.243" endtime="20200730 00:01:41.613"></status>
 </kw>
-<kw name="Verify Search functionality with Pincode" library="OnemapApp">
-<kw name="Search with Pincode" library="Search">
-<kw name="Clear Element Text" library="SeleniumLibrary">
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<arguments>
-<arg>id:search-text</arg>
-</arguments>
-<status status="PASS" starttime="20200729 00:29:57.392" endtime="20200729 00:29:57.462"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>id:search-text</arg>
-<arg>${Pincode}</arg>
-</arguments>
-<msg timestamp="20200729 00:29:57.463" level="INFO">Typing text '689674' into text field 'id:search-text'.</msg>
-<status status="PASS" starttime="20200729 00:29:57.462" endtime="20200729 00:29:57.594"></status>
-</kw>
+<kw name="Verify Route" library="OnemapApp">
+<kw name="Add destination" library="Route">
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>id:search-text</arg>
+<arg>id:jpbtn</arg>
 </arguments>
-<msg timestamp="20200729 00:29:57.595" level="INFO">Clicking element 'id:search-text'.</msg>
-<status status="PASS" starttime="20200729 00:29:57.595" endtime="20200729 00:29:57.823"></status>
+<msg timestamp="20200730 00:01:41.614" level="INFO">Clicking element 'id:jpbtn'.</msg>
+<status status="PASS" starttime="20200730 00:01:41.614" endtime="20200730 00:01:41.697"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>id:search-text-dest</arg>
+</arguments>
+<msg timestamp="20200730 00:01:41.723" level="INFO">Current page contains element 'id:search-text-dest'.</msg>
+<status status="PASS" starttime="20200730 00:01:41.697" endtime="20200730 00:01:41.724"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20200729 00:30:00.825" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200729 00:29:57.823" endtime="20200729 00:30:00.826"></status>
+<msg timestamp="20200730 00:01:44.726" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200730 00:01:41.724" endtime="20200730 00:01:44.726"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:search-text-dest</arg>
+<arg>${Route}</arg>
+</arguments>
+<msg timestamp="20200730 00:01:44.727" level="INFO">Typing text 'yew tee park' into text field 'id:search-text-dest'.</msg>
+<status status="PASS" starttime="20200730 00:01:44.726" endtime="20200730 00:01:45.066"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>id:searchResult0</arg>
+<arg>class:dest</arg>
 </arguments>
-<msg timestamp="20200729 00:30:00.829" level="INFO">Clicking element 'id:searchResult0'.</msg>
-<status status="PASS" starttime="20200729 00:30:00.827" endtime="20200729 00:30:00.969"></status>
+<msg timestamp="20200730 00:01:45.067" level="INFO">Clicking element 'class:dest'.</msg>
+<status status="PASS" starttime="20200730 00:01:45.067" endtime="20200730 00:01:45.163"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:57.392" endtime="20200729 00:30:00.969"></status>
+<status status="PASS" starttime="20200730 00:01:41.613" endtime="20200730 00:01:45.164"></status>
 </kw>
-<kw name="Verify Search result with pincode" library="Search">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>xpath://*[@id="postal_code"]</arg>
-</arguments>
-<msg timestamp="20200729 00:30:00.986" level="INFO">Current page contains element 'xpath://*[@id="postal_code"]'.</msg>
-<status status="PASS" starttime="20200729 00:30:00.971" endtime="20200729 00:30:00.986"></status>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<arguments>
-<arg>xpath://*[@id="postal_code"]</arg>
-<arg>${Pincode}</arg>
-</arguments>
-<msg timestamp="20200729 00:30:01.012" level="INFO">Element 'xpath://*[@id="postal_code"]' contains text '689674'.</msg>
-<status status="PASS" starttime="20200729 00:30:00.986" endtime="20200729 00:30:01.012"></status>
-</kw>
+<kw name="Verify destination in map" library="Route">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>10s</arg>
+<arg>5s</arg>
 </arguments>
-<msg timestamp="20200729 00:30:11.015" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200729 00:30:01.012" endtime="20200729 00:30:11.016"></status>
+<msg timestamp="20200730 00:01:50.166" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200730 00:01:45.164" endtime="20200730 00:01:50.166"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:30:00.970" endtime="20200729 00:30:11.016"></status>
-</kw>
-<kw name="Verify Search result on map with pincode" library="Search">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<kw name="Click Image" library="SeleniumLibrary">
+<doc>Clicks an image identified by ``locator``.</doc>
 <arguments>
-<arg>id:start_marker</arg>
+<arg>xpath://*[@id="map"]/div[1]/div[4]/img[2]</arg>
 </arguments>
-<msg timestamp="20200729 00:30:11.035" level="INFO">Current page contains element 'id:start_marker'.</msg>
-<status status="PASS" starttime="20200729 00:30:11.019" endtime="20200729 00:30:11.035"></status>
+<msg timestamp="20200730 00:01:50.167" level="INFO">Clicking image 'xpath://*[@id="map"]/div[1]/div[4]/img[2]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200730 00:01:51.692" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200730 00:01:51.301" endtime="20200730 00:01:51.692"></status>
 </kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<arguments>
-<arg>id:start_marker</arg>
-<arg>${Pincode}</arg>
-</arguments>
-<msg timestamp="20200729 00:30:11.071" level="INFO">Element 'id:start_marker' contains text '689674'.</msg>
-<status status="PASS" starttime="20200729 00:30:11.037" endtime="20200729 00:30:11.071"></status>
+<msg timestamp="20200730 00:01:51.692" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="https://web-static.onemap.sg/images/main/busRoute/transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" style="margin-left: -8px; margin-top: -9.25px; width: 16px; height: 18.5px; transform: translate3d(773px, 470px, 0px); z-index: 470;"&gt; is not clickable at point (1000, 480). Other element would receive the click: &lt;img src="https://web-static.onemap.sg/images/main/busRoute/transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" style="margin-left: -8px; margin-top: -9.25px; width: 16px; height: 18.5px; transform: translate3d(773px, 470px, 0px); z-index: 470;"&gt;
+  (Session info: chrome=84.0.4147.89)
+</msg>
+<status status="FAIL" starttime="20200730 00:01:50.167" endtime="20200730 00:01:51.692"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>10s</arg>
-</arguments>
-<msg timestamp="20200729 00:30:21.073" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200729 00:30:11.071" endtime="20200729 00:30:21.073"></status>
+<status status="FAIL" starttime="20200730 00:01:45.164" endtime="20200730 00:01:51.692"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:30:11.017" endtime="20200729 00:30:21.074"></status>
+<status status="FAIL" starttime="20200730 00:01:41.613" endtime="20200730 00:01:51.692"></status>
 </kw>
-<status status="PASS" starttime="20200729 00:29:57.392" endtime="20200729 00:30:21.074"></status>
-</kw>
-<kw name="End Web Test" library="Common">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200729 00:30:21.076" endtime="20200729 00:30:32.087"></status>
-</kw>
-<status status="PASS" starttime="20200729 00:30:21.075" endtime="20200729 00:30:32.087"></status>
-</kw>
-<doc>Test case 2</doc>
-<status status="PASS" starttime="20200729 00:29:18.550" endtime="20200729 00:30:32.087" critical="yes"></status>
+<doc>Test case 3</doc>
+<status status="FAIL" starttime="20200730 00:01:13.374" endtime="20200730 00:01:51.692" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="https://web-static.onemap.sg/images/main/busRoute/transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" style="margin-left: -8px; margin-top: -9.25px; width: 16px; height: 18.5px; transform: translate3d(773px, 470px, 0px); z-index: 470;"&gt; is not clickable at point (1000, 480). Other element would receive the click: &lt;img src="https://web-static.onemap.sg/images/main/busRoute/transparent.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" style="margin-left: -8px; margin-top: -9.25px; width: 16px; height: 18.5px; transform: translate3d(773px, 470px, 0px); z-index: 470;"&gt;
+  (Session info: chrome=84.0.4147.89)
+</status>
 </test>
 <doc>This is some basic info about whole suit</doc>
-<status status="PASS" starttime="20200729 00:29:18.241" endtime="20200729 00:30:32.395"></status>
+<status status="FAIL" starttime="20200730 00:01:12.980" endtime="20200730 00:01:51.692"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Onemap">Onemap</stat>
+<stat pass="0" fail="1" id="s1" name="Onemap">Onemap</stat>
 </suite>
 </statistics>
 <errors>

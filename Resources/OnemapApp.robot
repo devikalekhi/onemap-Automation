@@ -4,6 +4,7 @@ Resource    ../Resources/PO/Carousel.robot
 Resource    ../Resources/PO/LandingPage.robot
 Resource    ../Resources/PO/Search.robot
 Resource    ../Resources/PO/NearbyService.robot
+Resource    ../Resources/PO/Route.robot
 
 *** Variables ***
 
@@ -39,4 +40,7 @@ Verify Nearest services
      nearbyservice.nearest items
      nearbyservice.nearby mrt
 
+Verify Route
+      route.add destination
+      route.verify destination in map
 

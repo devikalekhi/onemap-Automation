@@ -30,7 +30,7 @@ Verify Search result on map with pincode
 
 Search with Address
         input text    id:search-text    ${Address}
-        click element  id:search-text
+        #click element  id:search-text
         Sleep    3s
         click element  id:searchResult0
 
