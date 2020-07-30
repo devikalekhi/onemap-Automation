@@ -14,7 +14,6 @@ ${Address}    73 choa chu kang loop
 Search with Pincode
         clear element text  id:search-text
         input text    id:search-text    ${Pincode}
-        click element  id:search-text
         Sleep    3s
         click element  id:searchResult0
 

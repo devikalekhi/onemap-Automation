@@ -18,8 +18,14 @@ Add destination
 
 
 Verify destination in map
-    #click element    xpath://*[@id="journeyForm"]/div[1]/div/div[1]/div
-    sleep    5s
-    #scroll element into view  xpath://*[@id="map"]/div[1]/div[4]/img[2]
+    sleep    3s
     click image    xpath://*[@id="map"]/div[1]/div[4]/img[2]
     element should contain    class:destination   ${Route}    None    True
+
+Verify transit options
+
+    click element    xpath://*[@id="journeyForm"]/div[1]/div/div[6]/div/label
+    click element    xpath://*[@id="journeyForm"]/div[1]/div/div[5]/div/label
+    click element    xpath://*[@id="journeyForm"]/div[1]/div/div[3]/div/label
+    click element    xpath://*[@id="journeyForm"]/div[1]/div/div[2]/div/label
+    click element    xpath://*[@id="journeyForm"]/div[1]/div/div[1]/div/label

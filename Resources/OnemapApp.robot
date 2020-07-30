@@ -6,6 +6,7 @@ Resource    ../Resources/PO/Search.robot
 Resource    ../Resources/PO/NearbyService.robot
 Resource    ../Resources/PO/Route.robot
 
+
 *** Variables ***
 
 
@@ -43,4 +44,5 @@ Verify Nearest services
 Verify Route
       route.add destination
       route.verify destination in map
+      route.verify transit options
 
