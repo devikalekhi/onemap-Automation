@@ -27,10 +27,10 @@ Commit history can be found at Git hib Repo
 
 Structure of framework is as below ::
 
-					Sript -> Onemap.robot
-							|
+Script -> Onemap.robot                                              
+	|
 Keywords -> Common.robot  (contains test setup and teardown keywords)  & 	OneMapApp.robot ( Contains test case keywords)
-							|
+	|
 Page Objects -> Contains all the identified elements and actions -> Carousel.robot, Search.robot,NearbyService.robot,Route.robot,Landingpage.robot
 
 3. Elements are identified using xpath and other html tags.
