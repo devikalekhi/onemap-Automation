@@ -32,3 +32,6 @@ Nearby MRT
     ${MRTTrim}  get text  xpath://*[@id="map"]/div[1]/div[6]/div/div[1]/div/div/p[1]
     #element should contain    xpath://*[@id="map"]/div[1]/div[6]/div/div[1]/div/div/p[1]  ${MRT.replace(" ","")}   none  true
     should be equal as strings  ${MRT.replace(" ","")}  ${MRTTrim.replace(" ","")}
+
+Nearby services
+    Click button    xpath://*[@id="sideMenu_container"]/div[4]/div/div[1]/div/div/input

@@ -15,6 +15,7 @@ Search with Pincode
         clear element text  id:search-text
         input text    id:search-text    ${Pincode}
         Sleep    3s
+
         click element  id:searchResult0
 
 Verify Search result with pincode
